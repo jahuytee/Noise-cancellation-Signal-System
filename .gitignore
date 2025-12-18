@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Audio output files (results)
+audio_dsp_project/results/audio_samples/*.wav
+audio_dsp_project/results/plots/*.png
+audio_dsp_project/results/metrics/*.csv
+
+# Keep directory structure but ignore contents
+!audio_dsp_project/results/audio_samples/.gitkeep
+!audio_dsp_project/results/plots/.gitkeep
+!audio_dsp_project/results/metrics/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Test recordings
+test_recording*.wav
+*.wav
