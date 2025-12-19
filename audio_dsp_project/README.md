@@ -55,8 +55,8 @@ audio_dsp_project/
 │   ├── stream.py              # Mic streaming + visualization ✅
 │   ├── utils.py               # SNR, plotting, WAV utilities ✅
 │   ├── filters.py             # Band-pass, notch filters ✅
-│   ├── spectral_subtraction.py (coming soon)
-│   └── wiener.py              # Wiener filtering (coming soon)
+│   ├── spectral_subtraction.py # Spectral subtraction ✅
+│   └── wiener.py              # Wiener filtering ✅
 ├── simulated_anc_fxlms/
 │   ├── simulate.py            # (coming soon)
 │   ├── paths.py               # (coming soon)
@@ -66,6 +66,7 @@ audio_dsp_project/
 ├── requirements.txt
 ├── test_a0.py                # Phase A0 verification ✅
 ├── test_a1.py                # Phase A1 verification ✅
+├── test_a2.py                # Phase A2 verification ✅
 └── README.md
 ```
 
@@ -85,8 +86,14 @@ audio_dsp_project/
 - [x] SNR improvement metrics
 - [x] Filter response visualization
 
+✅ **Phase A2 Complete**
+- [x] Spectral subtraction (basic + adaptive)
+- [x] Wiener filter (basic + adaptive)
+- [x] Noise PSD estimation
+- [x] Method comparison tools
+- [x] Advanced SNR metrics
+
 🔄 **In Progress**
-- [ ] Phase A2: Noise reduction algorithms (spectral subtraction, Wiener)
 - [ ] Phase A3: CLI integration
 - [ ] Phase B: FxLMS simulation
 
