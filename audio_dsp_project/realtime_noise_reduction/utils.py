@@ -67,7 +67,11 @@ def estimate_snr_from_audio(audio_data, sample_rate, energy_threshold=0.02):
     energies = np.array(energies)
     
     # Normalize energies
-    max_energy = np.max(energies) if np.max(energies) > 0 else 1.0
+    if np.max(energies) > 0:
+        max_energy = np.max(energies)
+    else:
+        max_energy = 1.0
+
     norm_energies = energies / max_energy
     
     # Separate signal and noise frames
@@ -137,6 +141,7 @@ def plot_spectrum(audio_data, sample_rate, title="Magnitude Spectrum", ax=None):
         fig, ax = plt.subplots(figsize=(10, 4))
     
     # Compute FFT
+
     n = len(audio_data)
     fft_data = np.fft.rfft(audio_data)
     freqs = np.fft.rfftfreq(n, 1/sample_rate)
